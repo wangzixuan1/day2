@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_749574_ry79yvesj2q.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <ul class="ul">
+            <li><span><i class="iconfont icon-shouye2"></i></span>
+                <p> 电源</p>
+            </li>
+            <li><span><i class="iconfont icon-shouye"></i></span>
+                <p> 首页</p>
+            </li>
+            <li><span><i class="iconfont icon-shouye4"></i></span>
+                <p> 菜单</p>
+            </li>
+            <li><span><i class="iconfont icon-shouye1"></i></span>
+                <p> 截屏</p>
+            </li>
+        </ul>
+    </div>
+    <script>
+        var li = document.querySelectorAll('.ul li');
+        li.forEach(function(v, i) {
+            li[i].onclick = function() {
+                alert(i)
+            }
+        })
+    </script>
+</body>
+
+</html>
